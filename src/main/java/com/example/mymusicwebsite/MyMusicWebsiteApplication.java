@@ -1,5 +1,6 @@
 package com.example.mymusicwebsite;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,6 +12,7 @@ Hot update and hot reload:
  */
 
 @SpringBootApplication
+@MapperScan("com.example.mymusicwebsite.dao")
 public class MyMusicWebsiteApplication {
 
     public static void main(String[] args) {
