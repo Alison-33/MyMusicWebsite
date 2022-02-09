@@ -6,6 +6,12 @@ export const mixin = {
                 title: title,
                 type: type
             })
+        },
+        // Get absolute path from relative path
+        getUrl(url){
+            return `${this.$store.state.HOST}/${url}`
         }
-    }
+    },
+
+    
 }

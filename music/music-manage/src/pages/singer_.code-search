@@ -1,0 +1,11 @@
+# Query: singer/
+# ContextLines: 1
+
+2 results - 1 file
+
+music-manage • src\api\index.js:
+   6  // get all singers
+   7: export const getAllSinger = () => get(`singer/allSinger`);
+   8  
+   9  // add singer
+  10: export const setSinger = (params) => post(`singer/add`, params);

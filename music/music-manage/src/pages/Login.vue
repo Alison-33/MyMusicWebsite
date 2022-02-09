@@ -47,6 +47,7 @@ export default{
       getLoginStatus(params)
         .then((res) => {
           if(res.code == 1){
+            localStorage.setItem('userName', this.ruleForm.username);
             this.$router.push("/Info");
             this.notify("Login succeed", "success");
             alert("success");
